@@ -46,7 +46,6 @@
                     <button type="submit">Añadir</button>
                 </form>
               
-{{-- prueba --}}
            </div>
             
         </div>
