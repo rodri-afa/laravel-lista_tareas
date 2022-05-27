@@ -41,10 +41,12 @@
                 <form action="{{route('nueva')}}" method="post">
                     {{ csrf_field() }}
 
-                    <label for="nueva_tarea">Nueva tarea</label>
-                    <input type="text" name="nueva_tarea" id="nueva">
-                    <button type="submit">Añadir</button>
-                </form>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Introduce una nueva tarea" type="text" name="nueva_tarea" id="nueva">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Añadir</button>
+                        </div>
+                    </div>
               {{-- prueba --}}
            </div>
             
