@@ -14,6 +14,13 @@ class ListaTareasController extends Controller
         
         return view('tareas',[ "datosTareas" => $tareasArray]);
     }
+    public function inicioApi(){
+        // $tareasArray = array("comprar el pan", "estudiar cliente", "sacar al perro");
+
+        $tareasArray = ItemLista::where('completado', 0)->get();
+        
+        return $tareasArray;
+    }
     public function nueva_tarea(Request $request){
         
         if ($request->nueva_tarea != null){
